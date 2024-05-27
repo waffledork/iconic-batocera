@@ -1,0 +1,35 @@
+﻿<theme>
+	<variables>
+		<fontRegular>./_inc/fonts/Oxygen-Regular.ttf</fontRegular>
+		<fontBold>./_inc/fonts/Gilroy-Bold.ttf</fontBold>
+		<fontLogo>./_inc/fonts/ChangaOne-Italic.ttf</fontLogo>
+		<spacerImage>./_inc/images/space.png</spacerImage>
+		<fontItalic>Gilroy-RegularItalic</fontItalic>
+
+		<systemDescriptionFontSize>0.022703703703704</systemDescriptionFontSize>
+		<systemInfoFontSize>0.022703703703704</systemInfoFontSize>
+		<systemHeaderFontSize>0.034</systemHeaderFontSize>
+		<systemNamePos>0.2328125 0.478</systemNamePos>
+		<systemInfoPos>0.2328125 0.518</systemInfoPos>
+		<helpSystemFontSize>0.018</helpSystemFontSize>
+		<helpSystemEntrySpacing>0.0042</helpSystemEntrySpacing>
+		<menuBarGamelistShadowPos>0 0.111111111111111</menuBarGamelistShadowPos>
+
+		<gamelistFontSize>0.025</gamelistFontSize>
+		<gamelistSelectorHeight>0.039814814814815</gamelistSelectorHeight>
+		<gamelistLineSpacing>1.851851851851852</gamelistLineSpacing>
+		<gamelistHelpPos>0.989 0.982</gamelistHelpPos>
+		<gamelistPos>0.528291666666667 0.116666666666667</gamelistPos>
+		<gamelistGridFontSize>0.030555555555556</gamelistGridFontSize>
+		<itemsBeforeCenter>4</itemsBeforeCenter>
+		<itemsAfterCenter>4</itemsAfterCenter>
+		<itemSize>0.20 0.15</itemSize>
+		<horizOffset>0.385</horizOffset>
+
+		<metaDatafontSize>0.018</metaDatafontSize>
+		<descriptionPos>0.71</descriptionPos>
+		<descriptionHeight>0.22</descriptionHeight>
+		<descriptionFontSize>0.018</descriptionFontSize>
+		<descriptionLineSpacing>1.4</descriptionLineSpacing>
+	</variables>
+</theme>

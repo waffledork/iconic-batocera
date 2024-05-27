@@ -1,0 +1,22 @@
+﻿<theme>
+	<variables>
+		<primaryTextColor>a0a0a0</primaryTextColor>
+		<systemInfoColor>54585a</systemInfoColor>
+
+		<helpTextColor>54585a</helpTextColor>
+		<helpIconColor>514689</helpIconColor>
+		<helpTextColorDimmed>54585a</helpTextColorDimmed>
+		<helpIconColorDimmed>514689</helpIconColorDimmed>
+		<backgroundColor>dedede</backgroundColor>		
+		<systemCarouselTextColor>54585a</systemCarouselTextColor>
+		<systemCarouselTextBackgroundColor>00000000</systemCarouselTextBackgroundColor>
+		<gamelistLogoColor>514689</gamelistLogoColor>
+		<gamelistSelectorColor>514689</gamelistSelectorColor>
+		<gamelistSelectedColor>b2b4b2</gamelistSelectedColor>
+		<gamelistPrimaryColor>777777</gamelistPrimaryColor>
+		<gamelistSecondaryColor>777777</gamelistSecondaryColor>
+		<gameDescriptionColor>54585a</gameDescriptionColor>
+		<gameMetadataColor>54585a</gameMetadataColor>
+		<BadgeColor>54585a</BadgeColor>
+	</variables>
+</theme>

@@ -1,0 +1,421 @@
+﻿<!--
+Theme Name: Iconic-Batocera
+Version: 1.0
+Author: Shravan Kovela
+Licnese: Creative Commons CC-BY-NC-SA
+Based On: "Iconic" by Siddy212
+-->
+
+<theme>
+	<formatVersion>7</formatVersion>
+	
+	<!-- Includes -->
+	<!-- ~~~~~~~~ -->
+	<include>./colors.xml</include>
+	<include>./fonts.xml</include>
+	<include>./file_paths.xml</include>
+	<include>./_inc/metadata/systems/${system.theme}.xml</include>
+
+	<!-- Mixed View -->
+	<!-- ~~~~~~~~~~ -->
+	<view name="system, basic, detailed, video, grid">
+
+		<!-- Help System -->
+		<helpsystem name="help">
+			<origin>1 1</origin>
+			<pos>0.936 0.994</pos>
+			<fontSize>${helpSystemFontSize}</fontSize>
+			<entrySpacing>${helpSystemEntrySpacing}</entrySpacing>
+			<fontPath>${fontBold}</fontPath>
+			<textColor>${helpTextColor}</textColor>
+			<iconColor>${helpIconColor}</iconColor>
+			<iconA>${eastButtonPath}</iconA>
+			<iconB>${southButtonPath}</iconB>
+			<iconX>${northButtonPath}</iconX>
+			<iconY>${westButtonPath}</iconY>
+		</helpsystem>
+
+		<!-- System Backgrounds -->
+		<image name="background-art" extra="true">
+			<path>${systemBackgroundArtPath}</path>
+			<default>${systemBackgroundArtDefaultPath}</default>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<minSize>1 1</minSize>
+			<linearSmooth>true</linearSmooth>
+			<zindex>0</zindex>
+		</image>
+		<image name="background-art-gradient" extra="true">
+			<path>./_inc/images/other/background-art-gradient-light.svg</path>
+			<pos>0 0.91</pos>
+			<size>1 0.19</size>
+			<zindex>4</zindex>
+		</image>
+	</view>
+
+	<!-- Screen View -->
+	<!-- ~~~~~~~~~~~ -->
+	<view name="screen">
+		<text name="clock">
+			<origin>1 1</origin>
+			<pos>0.986 1</pos>
+			<fontPath>${fontBold}</fontPath>
+			<fontSize>${helpSystemFontSize}</fontSize>
+		</text>
+		<controllerActivity name="controllerActivity">
+			<visible>false</visible>
+		</controllerActivity>
+	</view>
+	
+	<!-- System View -->
+	<!-- ~~~~~~~~~~~ -->
+	<view name="system">
+		<carousel name="systemcarousel">
+			<type>horizontal</type>
+			<origin>0 0.5</origin>
+			<pos>0 0.94</pos>
+			<size>1 0.119444444444444</size>
+			<logoSize>0.18229166666 0.12407407407</logoSize>
+			<maxItemCount>3.8</maxItemCount>
+			<color>ffffff00</color>
+			<colorEnd>ffffff</colorEnd>
+			<gradientType>vertical</gradientType>
+			<logoScale>1.2</logoScale>
+			<minLogoOpacity>0.4</minLogoOpacity>
+			<logoPos>0.13640625 0</logoPos>
+			<logoAlignment>center</logoAlignment>
+			<systemInfoDelay>8</systemInfoDelay>
+		</carousel>
+		<image name="logo">
+			<path>${systemLogoPath}</path>
+		</image>
+		<image name="system-image" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.2328125 .23</pos>
+			<size>.28 0</size>
+			<path>${systemControllerPath}</path>
+			<default>${systemControllerPathDefault}</default>
+			<zIndex>15</zIndex>
+		</image>
+		<image name="system-carousel-selector-shadow" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.2328125 -.1</pos>
+			<size>0.349125 1.1</size>
+			<path>./_inc/images/other/system-carousel-selector-shadow.png</path>
+			<zindex>2</zindex>
+		</image>
+		<image name="system-carousel-selector" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.2328125 0</pos>
+			<size>0.325434375 1</size>
+			<path>./_inc/images/other/system-carousel-selector-light.svg</path>
+			<zindex>3</zindex>
+		</image>
+		<image name="overlay" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<minSize>1 1</minSize>
+			<zIndex>14</zIndex>
+			<path>${overlayPath}</path>
+		</image>
+
+		<!-- System Metadata -->
+		<text name="systemInfo">
+			<origin>0.5 0.5</origin>
+			<pos>0.2328125 0.586</pos>
+			<size>0.390625 0.022703703703704</size>
+			<fontPath>${fontBold}</fontPath>
+			<fontSize>0.022703703703704</fontSize>
+			<color>${primaryTextColor}</color>
+			<alignment>center</alignment>
+			<lineSpacing>1</lineSpacing>
+			<forceUppercase>true</forceUppercase>
+			<zIndex>15</zIndex>		
+		</text>
+		<text name="system-name" extra="true">
+			<text>${systemName}</text>
+			<origin>0.5 0.5</origin>
+			<pos>${systemNamePos}</pos>
+			<fontPath>${fontBold}</fontPath>
+			<fontSize>${systemHeaderFontSize}</fontSize>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<color>${systemInfoColor}</color>
+			<zIndex>15</zIndex>
+		</text>
+		<text name="system-year-type" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.2328125 0.518</pos>
+			<fontSize>${systemInfoFontSize}</fontSize>
+			<fontPath>${fontBold}</fontPath>
+			<text>${systemReleaseYear} · ${systemHardwareType}</text>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<color>${systemInfoColor}</color>
+			<zIndex>15</zIndex>
+		</text>
+		<text name="system-description" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.2328125 0.615</pos>
+			<size>0.273125 0.23</size>
+			<fontPath>${fontRegular}</fontPath>
+			<fontSize>${systemDescriptionFontSize}</fontSize>
+			<text>${systemDescription}</text>
+			<verticalAlignment>top</verticalAlignment>
+			<alignment>center</alignment>
+			<autoScroll>vertical</autoScroll>
+			<autoScrollSpeed>50</autoScrollSpeed>
+			<autoScrollDelay>5000</autoScrollDelay>
+			<color>${systemInfoColor}</color>
+			<zIndex>15</zIndex>
+		</text>
+	</view>
+
+	<!-- Menu View -->
+	<!-- ~~~~~~~~~~~ -->
+	<view name="menu">
+		<menuText name="menutitle">
+			<fontPath>${fontBold}</fontPath>
+			<fontSize>0.035</fontSize>
+			<color>${primaryTextColor}</color>
+		</menuText>
+		<menuText name="menutext">
+			<fontPath>${fontRegular}</fontPath>
+			<fontSize>0.03</fontSize>
+			<color>${systemInfoColor}</color>
+		</menuText>
+		<menuTextSmall name="menutextsmall">
+			<fontPath>${fontBold}</fontPath>
+			<fontSize>0.02</fontSize>
+			<color>${primaryTextColor}</color>
+		</menuTextSmall>
+	</view>
+	
+	
+
+
+	<!-- Gamelist View -->
+	<!-- ~~~~~~~~~~~~~ -->
+	<view name="basic, detailed, video, grid">
+		<image name="background-art" extra="true">
+			<opacity>0.2</opacity>
+			<saturation>0.6</saturation>
+		</image>
+		<image name="background-overlay" extra="true">
+			<path>${whiteBoxPath}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<size>1 1</size>
+			<linearSmooth>true</linearSmooth>
+			<tile>true</tile>
+			<opacity>0.5</opacity>
+			<zindex>0</zindex>
+		</image>
+		<video name="md_video">
+			<origin>0.5 0.5</origin>
+			<delay>0</delay>
+			<roundCorners>0.005</roundCorners>
+			<pos>0.2328125 0.30</pos>
+			<maxSize>0.386 0.40</maxSize>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+		</video>
+
+		<image name="game-list-background-shadow" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.726 0.50648148147</pos>
+			<size>0.49542138364 0.88148148147</size>
+			<path>./_inc/images/other/gamelist-background-shadow.png</path>
+			<zIndex>6</zIndex>
+		</image>
+		<image name="game-list-background" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.726 0.50648148147</pos>
+			<size>0.46999999999 0.84166666666</size>
+			<path>./_inc/images/other/gamelist-background-light-medium.svg</path>
+			<zIndex>7</zIndex>
+		</image>
+		<textlist name="gamelist">
+			<fontPath>${fontBold}</fontPath>
+			<selectorColor>${gamelistSelectorColor}</selectorColor>
+			<selectedColor>${gamelistSelectedColor}</selectedColor>
+			<primaryColor>${gamelistPrimaryColor}</primaryColor>
+			<secondaryColor>${gamelistSecondaryColor}</secondaryColor>
+			<horizontalMargin>0.008333333333333</horizontalMargin>
+			<zIndex>11</zIndex>
+			<pos>${gamelistPos}</pos>
+			<size>0.39610062893 0.785</size>
+			<fontSize>${gamelistFontSize}</fontSize>
+			<selectorHeight>0.05</selectorHeight>
+			<lineSpacing>1.3</lineSpacing>
+		</textlist>
+
+
+
+		<!-- Start: Extended Metadata -->
+		<image name="game-metadata-background-shadow-extended" extra="true">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/images/other/gamelist-metadata-background-shadow-extended.png</path>
+			<pos>0.2328125 0.67058187797</pos>
+			<size>0.40135431629 0.28132587854</size>
+			<zIndex>3</zIndex>
+		</image>
+		<image name="game-metadata-background-image-extended" extra="true">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/images/other/gamelist-metadata-background-light-extended_empty.png</path>
+			<pos>0.2328125 0.72</pos>
+			<size>0.386 0.415</size>
+			<zIndex>4</zIndex>
+		</image>
+		<rating name="md_rating">
+			<origin>0.5 0.5</origin>
+			<filledPath>./_inc/images/icon-star-filled.svg</filledPath>
+			<unfilledPath>./_inc/images/icon-star-unfilled.svg</unfilledPath>
+			<color>${gameMetadataColor}</color>
+			<pos>0.0885 0.58</pos>
+			<size>0 ${metaDatafontSize}</size>
+		</rating>
+		<datetime name="md_releasedate,md_lastplayed">
+			<origin>0 0.5</origin>
+			<fontPath>${fontBold}</fontPath>
+			<color>${gameMetadataColor}</color>
+			<lineSpacing>1</lineSpacing>
+			<fontSize>${metaDatafontSize}</fontSize>
+		</datetime>
+		<text name="md_name,md_players,md_genre,md_developer,md_publisher,md_playcount">
+			<origin>0 0.5</origin>
+			<fontPath>${fontBold}</fontPath>
+			<color>${gameMetadataColor}</color>
+			<lineSpacing>1</lineSpacing>
+			<value>Unknown</value>
+			<fontSize>${metaDatafontSize}</fontSize>
+		</text>
+		<datetime name="md_releasedate">
+			<value>Unknown</value>
+			<pos>0.063 0.63</pos>
+			<size>0 ${metaDatafontSize}</size>
+			<format>%m/%Y</format>
+		</datetime>
+		<text name="md_name">
+			<autoScroll>horizontal</autoScroll>
+			<autoScrollSpeed>50</autoScrollSpeed>
+			<autoScrollDelay>5000</autoScrollDelay>
+			<pos>0.060 0.53</pos>
+			<size>0.355 ${metaDatafontSize}</size>
+		</text>
+		<text name="md_players">
+			<pos>0.068 0.68</pos>
+			<size>0 ${metaDatafontSize}</size>
+		</text>
+		<text name="md_genre">
+			<forceUppercase>true</forceUppercase>
+			<pos>0.175 0.58</pos>
+			<size>0.257 ${metaDatafontSize}</size>
+		</text>
+		<text name="md_developer">
+			<pos>0.175 0.63</pos>
+			<size>0.146 ${metaDatafontSize}</size>
+		</text>
+		<text name="md_publisher" extra="true">
+			<pos>0.175 0.68</pos>
+			<size>0.146 ${metaDatafontSize}</size>
+		</text>
+		<datetime name="md_lastplayed">
+			<value>Never</value>
+			<pos>0.355 0.63</pos>
+			<size>0.086 ${metaDatafontSize}</size>
+			<fontSize>0.018</fontSize>
+		</datetime>
+		<text name="md_playcount" extra="true">
+			<pos>0.355 0.68</pos>
+			<size>0.086 ${metaDatafontSize}</size>
+		</text>
+		<!-- End: Extended Metadata -->
+		<text name="md_description">
+			<origin>0.5 0</origin>
+			<fontPath>${fontRegular}</fontPath>
+			<autoScroll>vertical</autoScroll>
+			<autoScrollSpeed>50</autoScrollSpeed>
+			<autoScrollDelay>5000</autoScrollDelay>
+			<color>${gameMetadataColor}</color>
+			<pos>0.234 ${descriptionPos}</pos>
+			<size>0.3768 ${descriptionHeight}</size>
+			<fontSize>${descriptionFontSize}</fontSize>
+			<lineSpacing>${descriptionLineSpacing}</lineSpacing>
+		</text>
+		
+		<!-- Metadata Icons -->
+		<image name="controller_icon" extra="true">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/images/other/icon-controller-header.png</path>
+			<pos>0.055 0.53</pos>
+			<maxSize>0.02 0.02</maxSize>
+			<zIndex>5</zIndex>
+		</image>
+		<image name="genre_icon" extra="true">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/images/other/icon-genre-header.png</path>
+			<pos>0.159 0.58</pos>
+			<maxSize>0.02 0.02</maxSize>
+			<zIndex>5</zIndex>
+		</image>
+		<image name="release_date_icon" extra="true">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/images/other/icon-release-date-header.png</path>
+			<pos>0.05 0.63</pos>
+			<maxSize>0.02 0.02</maxSize>
+			<zIndex>5</zIndex>
+		</image>
+		<image name="developer_icon" extra="true">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/images/other/icon-developer-header.png</path>
+			<pos>0.159 0.63</pos>
+			<maxSize>0.02 0.02</maxSize>
+			<zIndex>5</zIndex>
+		</image>
+		<image name="last_played_icon" extra="true">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/images/other/icon-last-played-header.png</path>
+			<pos>0.34 0.63</pos>
+			<maxSize>0.02 0.02</maxSize>
+			<zIndex>5</zIndex>
+		</image>
+		<image name="players_icon" extra="true">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/images/other/icon-players-header.png</path>
+			<pos>0.055 0.68</pos>
+			<maxSize>0.02 0.02</maxSize>
+			<zIndex>5</zIndex>
+		</image>
+		<image name="publisher_icon" extra="true">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/images/other/icon-publisher-header.png</path>
+			<pos>0.159 0.68</pos>
+			<maxSize>0.02 0.02</maxSize>
+			<zIndex>5</zIndex>
+		</image>
+		<image name="play-count_icon" extra="true">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/images/other/icon-play-count-header.png</path>
+			<pos>0.34 0.68</pos>
+			<maxSize>0.02 0.02</maxSize>
+			<zIndex>5</zIndex>
+		</image>
+	</view>
+
+	<!-- Basic View -->
+	<!-- ~~~~~~~~~~~ -->
+	<view name="basic"></view>
+	
+	<!-- Detailed View -->
+	<!-- ~~~~~~~~~~~ -->
+	<view name="detailed"></view>
+
+	<!-- Video View -->
+	<!-- ~~~~~~~~~~~ -->
+	<view name="video"></view>
+
+	<!-- Grid View -->
+	<!-- ~~~~~~~~~~~ -->
+	<view name="grid"></view>
+	
+</theme>

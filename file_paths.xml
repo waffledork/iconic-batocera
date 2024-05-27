@@ -1,0 +1,17 @@
+﻿<theme>
+	<variables>
+		<systemLogoPath>./_inc/images/systems/logos/${system.name}.png</systemLogoPath>
+		<systemBackgroundArtPath>./_inc/images/systems/backgrounds/${system.name}.jpg</systemBackgroundArtPath>
+		<systemBackgroundArtDefaultPath>./_inc/images/systems/backgrounds/_default.jpg</systemBackgroundArtDefaultPath>
+		<systemControllerPath>./_inc/images/systems/controllers/${system.theme}.png</systemControllerPath>
+		<systemControllerPathDefault>./_inc/images/systems/controllers/_default.png</systemControllerPathDefault>
+		<overlayPath>./_inc/images/systems/overlays/${system.name}.png</overlayPath>
+		<whiteBoxPath>./_inc/images/other/space.png</whiteBoxPath>
+		
+		<!-- Buttons -->
+		<northButtonPath>./_inc/images/other/help-button-north.svg</northButtonPath>
+		<southButtonPath>./_inc/images/other/help-button-south.svg</southButtonPath>
+		<eastButtonPath>./_inc/images/other/help-button-east.svg</eastButtonPath>
+		<westButtonPath>./_inc/images/other/help-button-west.svg</westButtonPath>
+	</variables>
+</theme>
